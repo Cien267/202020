@@ -449,6 +449,10 @@
         state.workRemaining = state.workSeconds
         nextTimer.textContent = formatTime(state.workRemaining)
         state.breakRemaining = 0
+        showNotification(
+          "Time to back to your work",
+          `Work for ${state.workMinsIn} minutes.`
+        )
       }
 
       function updateUI() {
