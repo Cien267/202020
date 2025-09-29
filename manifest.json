@@ -1,0 +1,10 @@
+{
+  "name": "20-20-20 Eye Relax Reminder",
+  "short_name": "20-20-20",
+  "description": "Reminds you every 20 minutes to rest your eyes for 20 seconds.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7f7f8",
+  "theme_color": "#6b9cff",
+  "icons": []
+}

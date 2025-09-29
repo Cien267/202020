@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#6b9cff" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>20-20-20 Eye Relax Reminder</title>
     <style>
@@ -491,6 +493,13 @@
       })
 
       updateUI()
+
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("sw.js")
+          .then(() => console.log("Service Worker registered"))
+          .catch((err) => console.error("SW registration failed:", err))
+      }
     </script>
   </body>
 </html>
